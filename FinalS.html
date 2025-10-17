@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Operation Restoration – Marlisa Physiotherapy PR0211672</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --background: #f5f7fa;
+      --card: #ffffff;
+      --highlight: #e74c3c;
+      --text: #333;
+      --muted: #7f8c8d;
+    }
+
+    body.dark {
+      --background: #1e1e1e;
+      --card: #2a2a2a;
+      --text: #e0e0e0;
+      --primary: #ecf0f1;
+      --highlight: #e67e22;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      margin: 0;
+      padding: 20px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    h1, h2, h3 {
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    h1 small {
+      font-size: 0.6em;
+      color: var(--muted);
+    }
+
+    .section {
+      margin-bottom: 40px;
+      background: var(--card);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: background-color 0.3s;
+    }
+
+    .summary-box {
+      background: #ecf0f1;
+      border-left: 5px solid #3498db;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th {
+      background-color: #34495e;
+      color: white;
+      padding: 12px;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    tr:nth-child(even) {
+      background-color: rgba(0, 0, 0, 0.02);
+    }
+
+    tr:hover {
+      background-color: #f0f8ff;
+    }
+
+    .flagged {
+      background-color: #fff8e1;
+    }
+
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 6px 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .footnote {
+      font-size: 0.9em;
+      color: var(--muted);
+      margin-top: 10px;
+    }
+
+    .highlight {
+      background-color: var(--highlight);
+      color: white;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .dark-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #34495e;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      font-size: 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .dark-toggle:hover {
+      background: #2c3e50;
+    }
+
+    .save-btn {
+      margin-top: 10px;
+      background: #2ecc71;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      font-size: 14px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .save-btn:hover {
+      background: #27ae60;
+    }
+
+    @media (max-width: 768px) {
+      h1, h2 {
+        font-size: 1.5em;
+      }
+
+      th, td {
+        font-size: 14px;
+      }
+
+      .dark-toggle {
+        padding: 8px 12px;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button class="dark-toggle" onclick="toggleDarkMode()">🌙 Toggle Theme</button>
+
+  <h1>Marlisa Physiotherapy <small>PR0211672</small></h1>
+  <h2>Operation Restoration</h2>
+
+  <div class="section summary-box">
+    <h3>📊 Verified Financial Totals</h3>
+    <ul>
+      <li><strong>Total Outstanding:</strong> R680,982.01</li>
+      <li><strong>Current (0 days):</strong> R103,612.45</li>
+      <li><strong>30 Days:</strong> R54,480.98</li>
+      <li><strong>60 Days:</strong> R38,919.87</li>
+      <li><strong>90 Days:</strong> R56,051.23</li>
+      <li><strong>120 Days:</strong> R59,803.07</li>
+      <li><strong>150+ Days:</strong> <span class="highlight">R370,561.01</span></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>🏥 Scheme Totals & Remarks</h3>
+    <table>
+      <thead>
+        <tr><th>Medical Scheme</th><th>Total Outstanding</th><th>Remark</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>GEMS</td><td>R219,002.95</td><td><input type="text" placeholder="Enter remark…" /></td></tr>
+        <tr><td>Discovery</td><td>R107,810.52</td><td><input type="text" placeholder="Enter remark…" /></td></tr>
+        <tr><td>Bonitas</td><td>R45,200.00</td><td><input type="text" placeholder="Enter remark…" /></td></tr>
+        <tr><td>Fedhealth</td><td>R340,777.31</td><td><input type="text" placeholder="Enter remark…" /></td></tr>
+        <tr><td>Private</td><td>R39,824.05</td><td><input type="text" placeholder="Enter remark…" /></td></tr>
+        <tr><td>Polmed</td><td>R28,749.00</td><td><input type="text" placeholder="Enter remark…" /></td></tr>
+        <tr><td>SANDF</td><td>R47,613.55</td><td><input type="text" placeholder="Enter remark…" /></td></tr>
+        <tr><td>VPA</td><td>R21,584.65</td><td><input type="text" placeholder="Enter remark…" /></td></tr>
+        <tr><td>Medihelp</td><td>R17,957.97</td><td><input type="text" placeholder="Enter remark…" /></td></tr>
+        <tr><td>Others</td><td>R169,000.00</td><td><input type="text" placeholder="Enter remark…" /></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h3>🚩 Top 10 Overdue Accounts (Editable Remarks)</h3>
+    <table>
+      <thead>
+        <tr><th>Account No.</th><th>Holder</th><th>Scheme</th><th>Age</th><th>Amount</th><th>Remarks</th></tr>
+      </thead>
+      <tbody>
+        <tr class="flagged"><td>S003150</td><td>KRUGER A</td><td>POLMED</td><td>150+ days</td><td>R25,886.95</td><td><input type="text" /></td></tr>
+        <tr class="flagged"><td>S003558</td><td>DE WET D</td><td>GEMS</td><td>150+ days</td><td>R26,562.95</td><td><input type="text" /></td></tr>
+        <tr class="flagged"><td>S003364</td><td>KRITZINGER J</td><td>GEMS</td><td>150+ days</td><td>R20,519.55</td><td><input type="text" /></td></tr>
+        <tr class="flagged"><td>S003303</td><td>LINDEBOOM JM</td><td>FEDHEALTH</td><td>150+ days</td><td>R20,647.80</td><td><input type="text" /></td></tr>
+        <tr class="flagged"><td>S002877</td><td>DOMOLA TL</td><td>SANDF</td><td>150+ days</td><td>R22,195.10</td><td><input type="text" /></td></tr>
+        <tr class="flagged"><td>S002842</td><td>NORTJE JFM</td><td>GEMS</td><td>150+ days</td><td>R17,619.65</td><td><input type="text" /></td></tr>
+        <tr class="flagged"><td>S001792</td><td>CATUMBELA A</td><td>PRIVATE</td><td>150+ days</td><td>R15,784.80</td><td><input type="text" /></td></tr>
+        <tr class="flagged"><td>S002935</td><td>HAW JA</td><td>PLATINUM</td><td>150+ days</td><td>R15,607.83</td><td><input type="text" /></td></tr>
+        <tr class="flagged"><td>S003092</td><td>SMITH TQ</td><td>GEMS</td><td>150+ days</td><td>R11,321.60</td><td><input type="text" /></td></tr>
+        <tr class="flagged"><td>S003481</td><td>CROUS GJ</td><td>SANDF</td><td>150+ days</td><td>R11,446.55</td><td><input type="text" /></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h3>🔐 Private Accounts Recovery Plan</h3>
+    <ul>
+      <li>Send formal letters outlining balance and payment options</li>
+      <li>Offer structured payment plans (e.g. R500/month)</li>
+      <li>Escalate non‑responsive accounts after 60 days</li>
+      <li>Log all contact attempts & commitments</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>⚠️ Scheme Exhaustion Protocol</h3>
+    <ul>
+      <li>Flag account when balance ≥ R5,000</li>
+      <li>Pause further billing if scheme confirmation is unclear</li>
+      <li>Notify therapist before next session</li>
+      <li>Document all communications with the scheme & patient</li>
+    </ul>
+  </div>
+
+  <div class="section footnote">
+    <h3>🚫 Known Problematic Schemes (Allied Health Payments)</h3>
+    <ul>
+      <li><strong>GEMS</strong> – inconsistent pm­benefits, difficult authorization, slow support</li>
+      <li><strong>Fedhealth</strong> – slow processing, frequent rejections</li>
+      <li><strong>Polmed</strong> – strict pre‑authorization, limited allied clarity</li>
+      <li><strong>Bonitas</strong> – unpredictable rejections, poor visibility</li>
+      <li><strong>Medshield</strong> – rigid structure, low responsiveness</li>
+      <li><strong>Private (non‑scheme)</strong> – no formal recovery structure, manual follow-up needed</li>
+    </ul>
+    <p><em>Note: These schemes are flagged based on historical behavior, claim trends, and feedback. Use as escalation reference.</em></p>
+  </div>
+
+  <div class="section">
+    <h3>📝 Weekly Recovery Meeting Notes</h3>
+    <textarea id="meetingNotes" placeholder="Write or paste notes here…" rows="8"></textarea>
+    <button class="save-btn" onclick="saveNotes()">💾 Save to Google Sheets</button>
+    <p class="footnote" id="statusMsg">Loading notes…</p>
+  </div>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+
+    const endpoint = 'https://script.google.com/macros/s/AKfycbxA-VT2atHKggF5UHoFwDYp9EDHBFGlsCsvfUzmjSVMoDntWTknkdd_sfhzFttr-C1Gdg/exec';
+
+    async function loadNotes() {
+      try {
+        const res = await fetch(endpoint);
+        const data = await res.json();
+        if (Array.isArray(data) && data.length > 0) {
+          const latest = data[data.length - 1];
+          document.getElementById('meetingNotes').value = latest.notes || '';
+        }
+        document.getElementById('statusMsg').textContent = '✅ Loaded latest saved notes.';
+      } catch (err) {
+        document.getElementById('statusMsg').textContent = '⚠️ Failed to load notes.';
+        console.error('Error loading notes:', err);
+      }
+    }
+
+    async function saveNotes() {
+      const notes = document.getElementById('meetingNotes').value;
+      const payload = {
+        notes: notes,
+        schemeRemarks: '',
+        author: 'DashboardUser'
+      };
+
+      try {
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const result = await res.json();
+        if (result.status === 'success') {
+          document.getElementById('statusMsg').textContent = '✅ Notes saved to Google Sheets.';
+        } else {
+          throw new Error(result.message || 'Unknown error');
+        }
+      } catch (err) {
+        document.getElementById('statusMsg').textContent = '❌ Save failed.';
+        console.error('Error saving notes:', err);
+      }
+    }
+
+    window.onload = loadNotes;
+  </script>
+</body>
+</html>
