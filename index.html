@@ -14,7 +14,6 @@
       --text: #333;
       --muted: #7f8c8d;
     }
-
     body.dark {
       --background: #1e1e1e;
       --card: #2a2a2a;
@@ -22,11 +21,9 @@
       --primary: #ecf0f1;
       --highlight: #e67e22;
     }
-
     * {
       box-sizing: border-box;
     }
-
     body {
       font-family: 'Inter', sans-serif;
       background-color: var(--background);
@@ -35,17 +32,14 @@
       padding: 20px;
       transition: background-color 0.3s, color 0.3s;
     }
-
     h1, h2, h3 {
       color: var(--primary);
       margin-bottom: 10px;
     }
-
     h1 small {
       font-size: 0.6em;
       color: var(--muted);
     }
-
     .section {
       margin-bottom: 40px;
       background: var(--card);
@@ -54,18 +48,15 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
       transition: background-color 0.3s;
     }
-
     .summary-box {
       background: #ecf0f1;
       border-left: 5px solid #3498db;
     }
-
     table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 10px;
     }
-
     th {
       background-color: #34495e;
       color: white;
@@ -73,24 +64,19 @@
       text-align: left;
       font-weight: 600;
     }
-
     td {
       padding: 10px;
       border-bottom: 1px solid #ddd;
     }
-
     tr:nth-child(even) {
       background-color: rgba(0, 0, 0, 0.02);
     }
-
     tr:hover {
       background-color: #f0f8ff;
     }
-
     .flagged {
       background-color: #fff8e1;
     }
-
     input[type="text"], textarea {
       width: 100%;
       padding: 6px 10px;
@@ -98,18 +84,15 @@
       border-radius: 6px;
       font-size: 14px;
     }
-
     ul {
       padding-left: 20px;
       margin-top: 10px;
     }
-
     .footnote {
       font-size: 0.9em;
       color: var(--muted);
       margin-top: 10px;
     }
-
     .highlight {
       background-color: var(--highlight);
       color: white;
@@ -117,7 +100,6 @@
       border-radius: 4px;
       font-weight: bold;
     }
-
     .dark-toggle {
       position: fixed;
       top: 20px;
@@ -131,11 +113,9 @@
       cursor: pointer;
       transition: background 0.3s;
     }
-
     .dark-toggle:hover {
       background: #2c3e50;
     }
-
     .save-btn {
       margin-top: 10px;
       background: #2ecc71;
@@ -146,20 +126,16 @@
       border-radius: 8px;
       cursor: pointer;
     }
-
     .save-btn:hover {
       background: #27ae60;
     }
-
     @media (max-width: 768px) {
       h1, h2 {
         font-size: 1.5em;
       }
-
       th, td {
         font-size: 14px;
       }
-
       .dark-toggle {
         padding: 8px 12px;
         font-size: 12px;
@@ -173,6 +149,7 @@
   <h1>Marlisa Physiotherapy <small>PR0211672</small></h1>
   <h2>Operation Restoration</h2>
 
+  <!-- Financial / Data Sections -->
   <div class="section summary-box">
     <h3>📊 Verified Financial Totals</h3>
     <ul>
@@ -194,7 +171,7 @@
       </thead>
       <tbody>
         <tr><td>GEMS</td><td>R219,002.95</td><td><input type="text" placeholder="Enter remark…" /></td></tr>
-        <tr><td>Discovery</td><td>R107,810.52</td><td><input type="text" placeholder="Enter remark…" /></td></tr>
+        <tr><td>Discovery</td><td>R1,007,810.52</td><td><input type="text" placeholder="Enter remark…" /></td></tr>
         <tr><td>Bonitas</td><td>R45,200.00</td><td><input type="text" placeholder="Enter remark…" /></td></tr>
         <tr><td>Fedhealth</td><td>R340,777.31</td><td><input type="text" placeholder="Enter remark…" /></td></tr>
         <tr><td>Private</td><td>R39,824.05</td><td><input type="text" placeholder="Enter remark…" /></td></tr>
@@ -231,34 +208,34 @@
   <div class="section">
     <h3>🔐 Private Accounts Recovery Plan</h3>
     <ul>
-      <li>Send formal letters outlining balance and payment options</li>
+      <li>Send formal letters outlining balance & payment options</li>
       <li>Offer structured payment plans (e.g. R500/month)</li>
       <li>Escalate non‑responsive accounts after 60 days</li>
-      <li>Log all contact attempts & commitments</li>
+      <li>Log all contact & commitments</li>
     </ul>
   </div>
 
   <div class="section">
     <h3>⚠️ Scheme Exhaustion Protocol</h3>
     <ul>
-      <li>Flag account when balance ≥ R5,000</li>
-      <li>Pause further billing if scheme confirmation is unclear</li>
-      <li>Notify therapist before next session</li>
-      <li>Document all communications with the scheme & patient</li>
+      <li>Flag accounts ≥ R5,000</li>
+      <li>Pause billing if scheme coverage is uncertain</li>
+      <li>Notify therapist before upcoming sessions</li>
+      <li>Document all communications</li>
     </ul>
   </div>
 
   <div class="section footnote">
     <h3>🚫 Known Problematic Schemes (Allied Health Payments)</h3>
     <ul>
-      <li><strong>GEMS</strong> – inconsistent pm­benefits, difficult authorization, slow support</li>
-      <li><strong>Fedhealth</strong> – slow processing, frequent rejections</li>
-      <li><strong>Polmed</strong> – strict pre‑authorization, limited allied clarity</li>
-      <li><strong>Bonitas</strong> – unpredictable rejections, poor visibility</li>
+      <li><strong>GEMS</strong> – inconsistent PMB, authorization issues</li>
+      <li><strong>Fedhealth</strong> – slow processing, rejections</li>
+      <li><strong>Polmed</strong> – strict pre‑auth, poor clarity</li>
+      <li><strong>Bonitas</strong> – unpredictable rejections</li>
       <li><strong>Medshield</strong> – rigid structure, low responsiveness</li>
-      <li><strong>Private (non‑scheme)</strong> – no formal recovery structure, manual follow-up needed</li>
+      <li><strong>Private</strong> – needs manual follow‑up</li>
     </ul>
-    <p><em>Note: These schemes are flagged based on historical behavior, claim trends, and feedback. Use as escalation reference.</em></p>
+    <p><em>Based on historical patterns, therapist & fund feedback.</em></p>
   </div>
 
   <div class="section">
@@ -266,6 +243,7 @@
     <textarea id="meetingNotes" placeholder="Write or paste notes here…" rows="8"></textarea>
     <button class="save-btn" onclick="saveNotes()">💾 Save to Google Sheets</button>
     <p class="footnote" id="statusMsg">Loading notes…</p>
+    <p class="footnote" id="lastSaved">Last saved: —</p>
   </div>
 
   <script>
@@ -273,6 +251,7 @@
       document.body.classList.toggle('dark');
     }
 
+    // Your Google Sheets web app endpoint
     const endpoint = 'https://script.google.com/macros/s/AKfycbxA-VT2atHKggF5UHoFwDYp9EDHBFGlsCsvfUzmjSVMoDntWTknkdd_sfhzFttr-C1Gdg/exec';
 
     async function loadNotes() {
@@ -282,6 +261,7 @@
         if (Array.isArray(data) && data.length > 0) {
           const latest = data[data.length - 1];
           document.getElementById('meetingNotes').value = latest.notes || '';
+          document.getElementById('lastSaved').textContent = `Last saved: ${latest.timestamp || '—'}`;
         }
         document.getElementById('statusMsg').textContent = '✅ Loaded latest saved notes.';
       } catch (err) {
@@ -297,7 +277,6 @@
         schemeRemarks: '',
         author: 'DashboardUser'
       };
-
       try {
         const res = await fetch(endpoint, {
           method: 'POST',
@@ -307,6 +286,8 @@
         const result = await res.json();
         if (result.status === 'success') {
           document.getElementById('statusMsg').textContent = '✅ Notes saved to Google Sheets.';
+          const now = new Date().toLocaleString();
+          document.getElementById('lastSaved').textContent = `Last saved: ${now}`;
         } else {
           throw new Error(result.message || 'Unknown error');
         }
@@ -320,4 +301,3 @@
   </script>
 </body>
 </html>
-
